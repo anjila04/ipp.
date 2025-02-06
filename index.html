@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sophiya Gurung</title>
+    <style>
+        body {
+            font-family: 'Pacifico', lobster;
+            background-color: #f9f0f6;
+            color: #4c4c4c;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #f8b4d9;
+            padding: 50px 20px;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .message {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            color: #6a4c9c;
+        }
+        .personalized-note {
+            font-size: 28px;
+            background-color: #fff3e5;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #f8b4d9;
+            padding: 20px;
+            color: white;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        .heart {
+            font-size: 40px;
+            color: #ff80a9;
+        }
+        .floating-heart {
+            position: absolute;
+            font-size: 60px;
+            color: #ff80a9;
+            animation: float 2s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    A Special Message for Sophiya 💖
+</header>
+
+<div class="content">
+    <p class="message">
+        Hi Sophiya, you're my absolute best friend! 💕
+    </p>
+    <div class="personalized-note">
+        <h3>My Prettiest Gurungseni:</h3>
+        <p>
+            I just want to say how grateful I am for you. You always know how to make me smile, and you’ve been there for me through everything. You’re not just my best friend, you’re family to me. Thank you for always supporting me, making me laugh, and just being you. I’m lucky to have you in my life. No matter the distance, you are always in my heart. I am always here for you, Sophiya. You are loved.
+        </p>
+    </div>
+    <p class="message">
+        I hope you know that no matter what happens, you're never alone. You are loved, you are cherished, and I am always here for you, through thick and thin. 💕
+    </p>
+</div>
+
+<div class="footer">
+    Sending you all the love and hugs today and always! <br>
+    From your best friend, Anjila
+</div>
+
+<script>
+    // Function to generate random positions for floating hearts
+    function createFloatingHearts(numHearts) {
+        for (let i = 0; i < numHearts; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('floating-heart');
+            heart.innerText = '❤️';
+            
+            // Randomize the position of the hearts
+            const randomLeft = Math.floor(Math.random() * 100) + '%'; // Horizontal position
+            const randomDelay = Math.random() * 2 + 's'; // Random animation delay for variety
+            const randomDuration = Math.random() * 2 + 2 + 's'; // Random animation duration
+
+            heart.style.left = randomLeft;
+            heart.style.animationDelay = randomDelay;
+            heart.style.animationDuration = randomDuration;
+            
+            document.body.appendChild(heart);
+        }
+    }
+
+    // Call the function to create 20 floating hearts
+    createFloatingHearts(20);
+</script>
+
+</body>
+</html>
